@@ -187,16 +187,125 @@ header {
     background-color: #02A68F;
     /* border-radius: 50px; */
     margin-left: 100px;
+    padding: 0 30px 0 30px;
  }
 
  .con2 {
     background-color: #0166B4;
     /* border-radius: 20px; */
+    padding: 0 30px 0 30px;
  }
 
  .con3 {
     background-color: #02A68F;
     /* border-radius: 40px; */
     margin-right: 100px;
+    padding: 0 30px 0 30px;
  }
+
+
+ /* benefits of online courses */
+ 
+
+.home_benefit_online {
+    margin-top: 150px;
+}
+
+.home_benefit_online1 {
+    height: 800px;
+    background-image: url("Asserts/images/online_courses.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.home_benefit_online2 {
+    padding-top: 90px;
+    padding-left: 40px;
+    height: 800px;
+}
+
+.home_benefit_online2 h2{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    color: #02A68F;
+}
+
+.home_three_benefits_div {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.iocn_benefits {
+    display: flex;
+    justify-content: center;
+}
+
+.iocn_benefits_icon{
+    padding-left: 30px;
+    align-content: center;
+    padding-top: 40%;
+    color: #02A68F;
+}
+
+.icon_benefits_h3{
+    margin-top: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.icon_benefits_p {
+    margin-right: 40px;
+}
+
+.home_benefit_online2_p {
+    color: #0166B4;
+    box-shadow: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* .home_three_benefits_div:hover {
+    background-color: #0166B4;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 50px; 
+} */
+
+
+@media (max-width: 768px) {
+    .home_benefit_online1 {
+        height: 500px;
+        margin-top: -120px;
+    }
+    .home_benefit_online2 {
+        height: 600px;
+        padding: 50px;
+    }
+    .home_benefit_online2_p{
+        font-size: 10px;
+    }
+    .iocn_benefits_icon{
+        height: 50px;
+        width: 50px;
+        margin-top: -150px;
+        text-align: center;
+    }
+    .home_benefit_online2 h2 {
+        font-size: 25px;
+    }
+    .icon_benefits_h3{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+        margin-top: -55px;
+        margin-bottom: 0px;
+    }
+    .icon_benefits_p{
+        font-size: 15px;
+        margin: 20px;
+    }
+}
  
