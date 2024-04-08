@@ -409,3 +409,8 @@ footer{
 .my_footer {
     margin-top: 80px;
 }
+
+.my_footer h5{
+    font-size: 20px;
+    font-weight: bolder;
+}
