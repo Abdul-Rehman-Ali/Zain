@@ -328,6 +328,10 @@ header {
 }
 
 /* testimonial */
+.home_testimonial {
+    margin-bottom: 50px;
+}
+
 
 .home_testimonial_heading{
     margin-top: 80px;
@@ -340,7 +344,7 @@ header {
 }
 
 .home_testimonial_heading h3{
-    color: orangered;
+    color: #0166B4;
     font-size: 50px;
     font-weight: bolder;
 }
@@ -352,12 +356,12 @@ header {
         margin-bottom: 20px;
     }
     .home_testimonial_heading h3{
-        color: orangered;
+        color: #02A68F;
         font-size: 30px;
         font-weight: bolder;
     }
     .testmonial_image_text h5{
-        color: orangered;
+        color: #02A68F;
         font-size: 1px;
         /* font-weight: bolder; */
         font-style: italic;
@@ -399,4 +403,8 @@ footer{
 .footer_link:hover{
     color: orangered;
     font-size: 18px;
+}
+
+.my_footer {
+    margin-top: 80px;
 }
