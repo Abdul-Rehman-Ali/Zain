@@ -309,3 +309,20 @@ header {
     }
 }
  
+
+/* School Name */
+.school_name {
+    margin-top: 80px;
+}
+
+.school_name h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #0166B4;
+}
+
+.school_name p{
+    padding: 20px 20% 0px 20%;
+    font-size: 20px;
+}
