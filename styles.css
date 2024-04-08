@@ -326,3 +326,59 @@ header {
     padding: 20px 20% 0px 20%;
     font-size: 20px;
 }
+
+/* testimonial */
+
+.home_testimonial_heading{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.home_testimonial_p{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.home_testimonial_heading h3{
+    color: orangered;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+    .home_testimonial_heading{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .home_testimonial_heading h3{
+        color: orangered;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .testmonial_image_text h5{
+        color: orangered;
+        font-size: 1px;
+        /* font-weight: bolder; */
+        font-style: italic;
+    }
+    .testmonial_image_text p{
+        font-size: 1px;
+    }
+}
+
+
+.testmonial_image_text h5{
+    color: orangered;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.testmonial_image_text p{
+    font-style: italic;
+}
+
+.home_testimonial_heading p {
+    margin: 20px 20% 20px 20%;
+}
