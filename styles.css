@@ -382,3 +382,21 @@ header {
 .home_testimonial_heading p {
     margin: 20px 20% 20px 20%;
 }
+
+
+/* footer   */
+
+
+footer{
+    background-color: #070F2B;
+    color: white;
+}
+
+.footer_link {
+    color: white;
+}
+
+.footer_link:hover{
+    color: orangered;
+    font-size: 18px;
+}
