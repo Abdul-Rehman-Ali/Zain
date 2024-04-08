@@ -95,14 +95,14 @@ header {
     width: 100%;
     padding: 8px;
     border: none;
-    background-color: #070F2B;
+    background-color: #02A68F;
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .form-group button:hover {
-    background-color: #1B1A55;
+    background-color: #0166B4;
 }
 
 .form-group p {
