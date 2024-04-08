@@ -392,7 +392,7 @@ header {
 
 
 footer{
-    background-color: #070F2B;
+    background-color: #02A68F;
     color: white;
 }
 
@@ -401,8 +401,9 @@ footer{
 }
 
 .footer_link:hover{
-    color: orangered;
+    color: #0166B4;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .my_footer {
