@@ -152,4 +152,51 @@ header {
 
  /* Slider Css */
 
+
+ .home_slider {
+    z-index: -1;
+ }
+ /* three_container */
+
+ .three_container {
+    /* background-color: aqua; */
+    height: 300px;
+ }
+
+ .three_con {
+    height: 300px;
+    z-index: 1;
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .three_con h2{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+ }
+
+ .three_con p{
+    font-size: 20px;
+    padding-top: 15px;
+ }
+
+ .con1 {
+    background-color: #02A68F;
+    /* border-radius: 50px; */
+    margin-left: 100px;
+ }
+
+ .con2 {
+    background-color: #0166B4;
+    /* border-radius: 20px; */
+ }
+
+ .con3 {
+    background-color: #02A68F;
+    /* border-radius: 40px; */
+    margin-right: 100px;
+ }
  
