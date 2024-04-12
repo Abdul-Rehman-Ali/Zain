@@ -414,3 +414,37 @@ footer{
     font-size: 20px;
     font-weight: bolder;
 }
+
+/* admission heading  */
+.admission_heading {
+    height: 200px;
+    background-color: #0166B4;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.admission_heading  h1{
+   padding-top: 70px;
+   font-size: 40px;
+    font-weight: bold;
+}
+
+
+.admission_heading2 {
+    height: 200px;
+    font-size: 60px;
+}
+
+.admission_heading2  h1{
+    padding-top: 30px;
+    font-size: 40px;
+     font-weight: bold;
+ }
+
+ .admission_heading2  p{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+
