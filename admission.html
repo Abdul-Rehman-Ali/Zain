@@ -3,63 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning </title>
-    <link rel="stylesheet" href="Asserts/css/bootstrap.min.css">
-    <script src="Asserts/js/bootstrap.min.js"></script>
-    <link href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login</title>
+    <link href="Asserts/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Asserts/css/font_awosome_icon.css">
-</head>
-<script src="Asserts/js/font_awesome.js" > </script>
+    <script src="Asserts/js/bootstrap.min.js"></script>
+    <script src="Asserts/js/jquery-3.7.1.min.js">
+    </script>
+ <script src="Asserts/js/lottie.min.js"></script>
+  </head>
 <body>
-    <!-- Header -->
-    <header>
-      <nav class="mynavbar navbar navbar-expand-xl bg-transparent">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="mynavbar navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactUs.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-  
-    <!-- headings  -->
-
-    <div class="container-flluid admission_heading text-center">
-        <h1>Apply Online</h1>
-    </div>
-
-
-    <div class="container admission_heading2 text-center">
-        <h1>Welcome To The Educator School</h1>
-        <p>Register your child with us at The Educators branch nearby you. To enroll your child at The Educators, kindly fill in the required information on this page, select the Province, City and campus. Fill in all additional details regarding Student Name, Parents/guardians on the form in order to complete the registration process.</p>
-    </div>
    
+ <!-- Header -->
+ <header>
+  <nav class="mynavbar navbar navbar-expand-xl bg-transparent">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="mynavbar navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- headings  -->
+
+  <div class="container-flluid admission_heading text-center">
+    <h1>Apply Online</h1>
+</div>
+
+
+<div class="container admission_heading2 text-center">
+    <h1>Welcome To The Educator School</h1>
+    <p>Register your child with us at The Educators branch nearby you. To enroll your child at The Educators, kindly fill in the required information on this page, select the Province, City and campus. Fill in all additional details regarding Student Name, Parents/guardians on the form in order to complete the registration process.</p>
+</div>
+
+
+    <div class="container admission_online py-5 form">
+        <!-- <div class="row"> -->
+            
+            <div class="col-md-6">
+                <form id="admissionForm" action="submit.php" method="post">
+                    <div class="form-group">
+                      <label for="studentName">Student Name:</label>
+                      <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="fatherName">Father's Name:</label>
+                      <input type="text" id="fatherName" name="fatherName" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="mobileNo">Mobile No:</label>
+                      <input type="tel" id="mobileNo" name="mobileNo" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="motherCNIC">Mother's CNIC No:</label>
+                      <input type="text" id="motherCNIC" name="motherCNIC" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="fatherCNIC">Father's CNIC No:</label>
+                      <input type="text" id="fatherCNIC" name="fatherCNIC" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="province">Province:</label>
+                      <select id="province" name="province" required>
+                        <option value="" selected disabled>Select Province</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                        <option value="Balochistan">Balochistan</option>
+                        <option value="Gilgit-Baltistan">Gilgit-Baltistan</option>
+                        <option value="Azad Jammu and Kashmir">Azad Jammu and Kashmir</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="city">City:</label>
+                      <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="town">Town:</label>
+                      <input type="text" id="town" name="town" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="schoolBranch">School Branch:</label>
+                      <input type="text" id="schoolBranch" name="schoolBranch" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="class">Class:</label>
+                      <input type="text" id="class" name="class" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="previousEducation">Previous Education Record:</label>
+                      <textarea id="previousEducation" name="previousEducation"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
 
 
 
+            <div class="col-md-6">
+              <div id="animation"></div>
+          </div>
 
-<!-- footer -->
+        <!-- </div> -->
+    </div>
+
+
+    <!-- footer -->
 <footer class="my_footer">
   <div class=" pt-5 pg-4">
 
@@ -69,29 +141,29 @@
 
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-dark">The Educator</h5>
-          <p>At The Educator School, we are dedicated to empowering minds and shaping futures through a commitment to excellence in education. Our institution stands as a beacon of opportunity, where students discover their potential and embrace limitless possibilities. Join us on a journey of knowledge, growth, and achievement.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque, quae molestiae ipsum natus nemo unde accusamus, temporibus consectetur, ad eum voluptatibus. Id quibusdam atque voluptate fuga sed recusandae sequi!</p>
         </div>
 
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Our Courses</h5>
           <p>
-            <a href="#" class="footer_link" style="text-decoration: none;">XYZ</a>
+            <a href="#" class="footer_link" style="text-decoration: none;">WordPress</a>
           </p>
 
           <p>
-            <a href="#" class="footer_link" style="text-decoration: none;">XYZ</a>
+            <a href="#" class="footer_link" style="text-decoration: none;">Artificial Intelligence</a>
           </p>
 
           <p>
-            <a href="#" class="footer_link" style="text-decoration: none;">XYZ</a>
+            <a href="#" class="footer_link" style="text-decoration: none;">Web Development</a>
           </p>
 
           <p>
-            <a href="#" class="footer_link" style="text-decoration: none;">XYZ</a>
+            <a href="#" class="footer_link" style="text-decoration: none;">App Development</a>
           </p>
 
           <p>
-            <a href="#" class="footer_link" style="text-decoration: none;">XYZ</a>
+            <a href="#" class="footer_link" style="text-decoration: none;">Python</a>
           </p>
         </div>
 
@@ -114,7 +186,7 @@
           </p>
 
           <p>
-            <a href="login.html" class="footer_link" style="text-decoration: none;">Login</a>
+            <a href="blogs.html" class="footer_link" style="text-decoration: none;">Blogs</a>
           </p>
         </div>  
 
@@ -122,7 +194,7 @@
           <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Contact</h5>
           <div class="icon-text mb-2">
             <i class="fa fa-home mr-3 icon"></i>
-            <span>3rd Floor, Saeed Centre, Okara</span>
+            <span>2nd Floor, Saeed Centre, Sahiwal</span>
           </div>
           <div class="icon-text mb-2">
             <i class="fa fa-envelope mr-3 icon"></i>
@@ -134,7 +206,7 @@
           </div>
           <div class="icon-text mb-2">
             <i class="fa fa-phone mr-3 icon"></i>
-            <span>+44 746 112 5175</span>
+            <span>+44 746 221 5175</span>
           </div>
         </div>
 
@@ -184,7 +256,18 @@
   </div>
 </footer>
 
+
+   
     
-  
 </body>
+<script>
+  // Load the animation
+  var animation = bodymovin.loadAnimation({
+      container: document.getElementById('animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'Asserts/Animation/animation.json' // Path to your JSON animation file
+  });
+</script>
 </html>
