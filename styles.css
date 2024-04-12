@@ -493,6 +493,7 @@ footer{
     cursor: pointer;
     width: 100%;
     font-size: 16px;
+    border-radius: 30px;
   }
   
   button[type="submit"]:hover {
