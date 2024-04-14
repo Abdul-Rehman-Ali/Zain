@@ -57,10 +57,11 @@ header {
 #animation {
     width: 100%;
     height: auto;
+    margin-top: 350px;
 }
 
 #animation_login_container {
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 .login-form {
@@ -68,6 +69,8 @@ header {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 500px;
+    margin-top: 400px;
 }
 
 .login-form h2 {
@@ -89,6 +92,10 @@ header {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+.my_form {
+    margin-top: 100px;
 }
 
 .form-group button {
