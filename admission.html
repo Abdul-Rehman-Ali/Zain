@@ -13,68 +13,126 @@
  <script src="Asserts/js/lottie.min.js"></script>
   </head>
   <script src="Asserts/js/font_awesome.js" > </script>
+ <script src="Asserts/js/lottie.min.js"></script>
 <body>
    
-  <!-- Header -->
-  <header>
-    <nav class="mynavbar navbar navbar-expand-xl bg-transparent">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="mynavbar navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="admission.html">Admission</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutUs.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactUs.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-          </ul>
-        </div>
+ <!-- Header -->
+ <header>
+  <nav class="mynavbar navbar navbar-expand-xl bg-transparent">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="mynavbar navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admission.html">Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+
+  <!-- headings  -->
+
+  <div class="container-flluid admission_heading text-center">
+    <h1>Apply Online</h1>
+</div>
 
 
-    <div class="container py-5 form">
-        <div class="row">
+<div class="container admission_heading2 text-center">
+    <h1>Welcome To The Educator School</h1>
+    <p>Register your child with us at The Educators branch nearby you. To enroll your child at The Educators, kindly fill in the required information on this page, select the Province, City and campus. Fill in all additional details regarding Student Name, Parents/guardians on the form in order to complete the registration process.</p>
+</div>
+
+
+    <div class="container admission_online py-5 form">
+        <!-- <div class="row"> -->
             
             <div class="col-md-6">
-                <form class="login-form" action="#" method="post">
-                    <h2>Login to Your Account</h2>
+                <form id="admissionForm" action="" method="post">
                     <div class="form-group">
-                        <label for="username">Username *:</label>
-                        <input type="text" id="username" name="username" required>
+                      <label for="studentName">Student Name:</label>
+                      <input type="text" id="studentName" name="studentName" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password *:</label>
-                        <input type="password" id="password" name="password" required>
+                      <label for="fatherName">Father's Name:</label>
+                      <input type="text" id="fatherName" name="fatherName" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Login</button>
+                      <label for="mobileNo">Mobile No:</label>
+                      <input type="tel" id="mobileNo" name="mobileNo" required>
                     </div>
                     <div class="form-group">
-                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
                     </div>
-                </form>
+                    <div class="form-group">
+                      <label for="motherCNIC">Mother's CNIC No:</label>
+                      <input type="text" id="motherCNIC" name="motherCNIC" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="fatherCNIC">Father's CNIC No:</label>
+                      <input type="text" id="fatherCNIC" name="fatherCNIC" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="province">Province:</label>
+                      <select id="province" name="province" required>
+                        <option value="" selected disabled>Select Province</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                        <option value="Balochistan">Balochistan</option>
+                        <option value="Gilgit-Baltistan">Gilgit-Baltistan</option>
+                        <option value="Azad Jammu and Kashmir">Azad Jammu and Kashmir</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="city">City:</label>
+                      <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="town">Town:</label>
+                      <input type="text" id="town" name="town" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="schoolBranch">School Branch:</label>
+                      <input type="text" id="schoolBranch" name="schoolBranch" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="class">Class:</label>
+                      <input type="text" id="class" name="class" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="previousEducation">Previous Education Record:</label>
+                      <textarea id="previousEducation" name="previousEducation"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
             </div>
+
+
 
             <div class="col-md-6">
               <div id="animation"></div>
           </div>
 
-        </div>
+        <!-- </div> -->
     </div>
+
 
 <!-- footer -->
 <footer class="my_footer">
