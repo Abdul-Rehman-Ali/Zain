@@ -58,7 +58,7 @@ if (isset($_POST['username']))
             <a class="nav-link" href="contactUs.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
         </ul>
       </div>
