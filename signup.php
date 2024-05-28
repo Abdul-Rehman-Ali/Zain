@@ -1,3 +1,23 @@
+<?php
+
+require("connection.php");
+
+if (isset($_POST['username']))
+{
+
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $pass = $_POST['password'];
+
+    $q = "INSERT INTO user (user_name, email, phone_number, password, date) VALUES ('$username', '$email', '$phone', '$pass',current_timestamp())";
+
+    mysqli_query($con,$q);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,15 +74,11 @@
         <div class="row">
             
             <div class="col-md-6 col-sm-12">
-                <form class="login-form" id="signup-form">
+                <form action="signup.php" method="post" class="login-form" id="signup-form">
                     <h2>Sign Up for an Account</h2>
                     <div class="form-group">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <label for="first-name">Userame:</label>
+                        <input type="text" id="username" name="username" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address:</label>
@@ -78,7 +94,7 @@
                     </div>
                     <div class="form-group">
                         <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <input type="password" id="confirm-password" name="confirm_password" required>
                     </div>
                     <div class="form-group">
                         <button type="submit">Sign Up</button>
@@ -105,13 +121,13 @@
           path: 'Asserts/Animation/animation.json'
       });
  
-      document.getElementById('signup-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          var formData = new FormData(this);
-          for (var pair of formData.entries()) {
-              console.log(pair[0] + ': ' + pair[1]);
-          }
-      });
+      // document.getElementById('signup-form').addEventListener('submit', function(event) {
+      //     event.preventDefault();
+      //     var formData = new FormData(this);
+      //     for (var pair of formData.entries()) {
+      //         console.log(pair[0] + ': ' + pair[1]);
+      //     }
+      // });
   </script>
 
 
